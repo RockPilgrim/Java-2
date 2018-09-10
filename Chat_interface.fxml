@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <VBox prefHeight="310.0" prefWidth="600.0" style="-fx-background-color: #ccc;">
+         <children>
+            <TextArea fx:id="TextArea" editable="false" prefHeight="310.0" prefWidth="590.0" promptText="Text" style="-fx-background-color: #482555;">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+      <HBox layoutY="310.0" prefHeight="56.0" prefWidth="600.0" style="-fx-background-color: #555;">
+         <children>
+            <TextField fx:id="TextField" onAction="#sendMsg" prefHeight="91.0" prefWidth="451.0" promptText="Enter text" style="-fx-background-color: #f0f0f0;">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="sendButton" mnemonicParsing="false" onAction="#sendMsg" prefHeight="92.0" prefWidth="150.0" text="SEND" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
